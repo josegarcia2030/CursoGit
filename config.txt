@@ -1,0 +1,87 @@
+#Comandos Utilizados en Git Bash
+
+--Para ver la version de Git que estamos utilizando
+git --version
+
+
+**************************
+CONFIGURACION DE GIT EN NUESTRO EQUIPO
+**************************
+
+-- Configuracion del nombre de usuario
+git config --global user.name "jose enrique"
+
+--Configuracion del correo de usuario
+git config --global user.email jose.garcia.f.2010@gmail.com
+
+--Configuracion del editor 
+git config --global core.editor "code --wait"
+
+--Configuracion del CRLF(salto de linea)
+git config --global core.autocrlf true
+
+--Ver la Configuracion realizada
+git config --global -editor
+
+
+**************************
+COMANDOS UTILIZADOS DE GIT
+**************************
+
+-- Para poder ver una lista de los archivos de la carpeta donde nos encontramos
+    ls
+
+-- Para poder cambiar de ubicacion 
+    cd nombre.archivo
+
+-- Para saber la ruta de donde nos encontramos
+    pwd
+
+-- Para poder crear una carpeta o directorio
+    mkdir nombre.archivo o nombre.carpeta
+
+
+-- Para inicializar el respositorio
+    git init
+
+-- Para ver el estado de nuestros archivos
+    git status o git status -s
+
+-- Para agregar archivos al stage
+    git add nombre.archivo || git add .  || git add *.txt 
+
+-- Para ver cambios realizados
+    git diff
+
+-- Para ver los cambios en el staged
+    git diff --storaged
+
+-- Para hacer un COMMIT
+    git commit -m "escribimos un mensaje corto pero preciso"
+
+-- Para remover o eliminar un archivo
+     git rm nombre.archivo
+
+-- Para mover o cambiar el nombre de un archivo
+    git mv nombre.archivo  nombreNuevo.archivo
+
+-- Para ver todos los Commit 
+    git log  o  git log --oneline
+
+-- Para saber en que rama nos encontramos
+    git branch
+
+-- Para cambiar de rama 
+    git checkout -b NombreDeLaRama
+
+-- Para agregar los cambios de la Rama creada a la Principal
+    git checkout master
+    git merge NombreDeLaRama
+
+-- Para subir nuestros archivos
+    git remote add origin https://github.com/josegarcia2030/CursoGit.git
+
+    git branch -M main
+
+    git push -u origin 
+
